@@ -308,7 +308,7 @@ void gotoxy(int x, int y){
 					if(map2[c.y][c.x] == 'D') P.D = 'D';
 					map2[c.y][c.x] = 'O';
 					turno1  = 1;
-					ganaIA++;
+					ganaIA ++;
 				}
 				if(map2[c.y][c.x]== ' ') map2[c.y][c.x]='X';	
 			}	
@@ -536,20 +536,22 @@ void gotoxy(int x, int y){
 			{
 				b.IA(s,c,r);
 			}
-			if(b.rganajugador() == 17)
+			if(b.rganajugador() == 85)
 			{
 				finjuego = false;
 				system("cls");
 				
 				cout<<"Ganaste"<<endl;
-				Sleep(2000);
+
+				Sleep(5000);
 			}
 			if(b.rganaIA() == 17)
 			{
 				finjuego = false;
 				system("cls");
 				cout<<"Perdiste"<<endl;
-				Sleep(2000);
+
+				Sleep(5000);
 			}
 			Sleep(30);
 		}
